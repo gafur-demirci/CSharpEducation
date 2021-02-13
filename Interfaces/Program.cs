@@ -10,17 +10,38 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
-            InterfaceIntro();
+            //InterfaceIntro();
 
             // Interface ve abstract lar new lenemez.
+
             //IPerson person = new IPerson();  diyemeyiz.
+
             //IPerson person = new Customer(); //diyebiliriz.
 
-            ICustomerDal customerDal = new SqlServerCustomerDal();
-            customerDal.Add();
-            ICustomerDal customerDal1 = new OracleCustomerDal();
-            customerDal1.Add();
+            //Demo();
 
+            // Hem SqlServer da hem de Oracle da kayıt yapabilmek için dizi halinde ICustomerDal kullanıldı.
+
+            ICustomerDal[] customerDals = new ICustomerDal[3]
+            {
+                new SqlServerCustomerDal(),
+                new OracleCustomerDal(),
+                new MySqlCustomerDal()
+            };
+
+            foreach (var customerDal in customerDals)
+            {
+                customerDal.Add();
+            }
+
+            Console.ReadLine();
+
+        }
+
+        private static void Demo()
+        {
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
         }
 
         private static void InterfaceIntro()
