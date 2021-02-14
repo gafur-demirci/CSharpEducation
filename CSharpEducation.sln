@@ -17,11 +17,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecapDemo1", "RecapDemo1\RecapDemo1.csproj", "{40B370ED-0C73-492A-9E03-D9267E0B9C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfacesDemo", "InterfacesDemo\InterfacesDemo.csproj", "{A550C66F-416E-4BF7-8C11-AFE0D653B7D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfacesDemo", "InterfacesDemo\InterfacesDemo.csproj", "{A550C66F-416E-4BF7-8C11-AFE0D653B7D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{E1EEE26E-3D80-4F79-9666-5A5951CCE10B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{E1EEE26E-3D80-4F79-9666-5A5951CCE10B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualMethods", "VirtualMethods\VirtualMethods.csproj", "{99571F5D-2441-4D7C-A35B-5157E0B090A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualMethods", "VirtualMethods\VirtualMethods.csproj", "{99571F5D-2441-4D7C-A35B-5157E0B090A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{C3E64B4B-DA53-4014-B2AF-432218E14963}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecapDemo2", "RecapDemo2\RecapDemo2.csproj", "{20CE4D27-B3DE-4866-A6D0-5FDD11100118}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{99571F5D-2441-4D7C-A35B-5157E0B090A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99571F5D-2441-4D7C-A35B-5157E0B090A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99571F5D-2441-4D7C-A35B-5157E0B090A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E64B4B-DA53-4014-B2AF-432218E14963}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E64B4B-DA53-4014-B2AF-432218E14963}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E64B4B-DA53-4014-B2AF-432218E14963}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E64B4B-DA53-4014-B2AF-432218E14963}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20CE4D27-B3DE-4866-A6D0-5FDD11100118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20CE4D27-B3DE-4866-A6D0-5FDD11100118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20CE4D27-B3DE-4866-A6D0-5FDD11100118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20CE4D27-B3DE-4866-A6D0-5FDD11100118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
