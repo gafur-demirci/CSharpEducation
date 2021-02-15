@@ -40,6 +40,9 @@ namespace Constructors
             CustomerManager customerManager1 = new CustomerManager(12);
             customerManager1.List();
 
+            PersonManager personManager = new PersonManager("Product");
+            personManager.Add();
+
             Console.ReadLine();
         }
     }
@@ -89,6 +92,34 @@ namespace Constructors
         public void Add()
         {
             Console.WriteLine("Added!");
+        }
+    }
+    // BaseClass da tanımlı dış parametreye bağlı ctor yapısı bulunmakta aynı class bir Message methodu ile BaseClass new lendiğinde ctor a girilen entity e göre mesaj yazdıracaktır.
+    class BaseClass
+    {
+        string _entity;
+        public BaseClass(string entity)
+        {
+            _entity = entity;
+        }
+        public void Message()
+        {
+            Console.WriteLine("{0} message",_entity);
+        }
+
+    }
+    // BaseClass ı inheritace eden bir PersonManager class ı tanımlanmakta burada Add methodu ile ekrana eklendiği ve inheritance ettiği class a ait Messege metodu çağırılmaktadır.
+    // bu method un çalışması için gereken entity değeri class ın ctor u içerisinde girilmesi istendi ve bu değer inheritance edildiği class a gönderildi.
+    class PersonManager : BaseClass
+    {
+        public PersonManager(string entity):base(entity)
+        {
+
+        }
+        public void Add()
+        {
+            Console.WriteLine("Added!");
+            Message();
         }
     }
 }
