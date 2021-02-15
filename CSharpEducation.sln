@@ -23,9 +23,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VirtualMethods", "VirtualMethods\VirtualMethods.csproj", "{99571F5D-2441-4D7C-A35B-5157E0B090A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{C3E64B4B-DA53-4014-B2AF-432218E14963}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractClasses", "AbstractClasses\AbstractClasses.csproj", "{C3E64B4B-DA53-4014-B2AF-432218E14963}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecapDemo2", "RecapDemo2\RecapDemo2.csproj", "{20CE4D27-B3DE-4866-A6D0-5FDD11100118}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecapDemo2", "RecapDemo2\RecapDemo2.csproj", "{20CE4D27-B3DE-4866-A6D0-5FDD11100118}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessModifiers", "AccessModifiers\AccessModifiers.csproj", "{2B47A498-2237-44ED-B03A-0DD7F9A9C9CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constructors", "Constructors\Constructors.csproj", "{B5891429-219A-49F5-83E0-CD620775992D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +85,14 @@ Global
 		{20CE4D27-B3DE-4866-A6D0-5FDD11100118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20CE4D27-B3DE-4866-A6D0-5FDD11100118}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20CE4D27-B3DE-4866-A6D0-5FDD11100118}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B47A498-2237-44ED-B03A-0DD7F9A9C9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B47A498-2237-44ED-B03A-0DD7F9A9C9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B47A498-2237-44ED-B03A-0DD7F9A9C9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B47A498-2237-44ED-B03A-0DD7F9A9C9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5891429-219A-49F5-83E0-CD620775992D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5891429-219A-49F5-83E0-CD620775992D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5891429-219A-49F5-83E0-CD620775992D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5891429-219A-49F5-83E0-CD620775992D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
