@@ -43,6 +43,16 @@ namespace Constructors
             PersonManager personManager = new PersonManager("Product");
             personManager.Add();
 
+            //Teacher teacher = new Teacher();    // static bir class new lenemez. static class ların özelliği içerisinde tanımlanan her şeyi herkes aynı şekilde görecektir.
+
+            Teacher.Number = 10;
+
+            // içerideki static için new leme yapılmaz ama diğer method için new lemek gerekmektedir.
+
+            Manager.DoSomething();
+            Manager manager = new Manager();
+            manager.DoSomething2();
+
             Console.ReadLine();
         }
     }
@@ -122,4 +132,35 @@ namespace Constructors
             Message();
         }
     }
+    // static nesneler ortak nesnelerdir herkes kullanabilir.
+    static class Teacher
+    {
+        public static int Number { get; set; }
+    }
+
+    static class Utilities
+    {
+        // static bir class a mutlaka çalışması için static ctor yazılabilir.
+        static Utilities()
+        {
+
+        }
+        public static void Validate()
+        {
+            Console.WriteLine("Validation is done!");
+        }
+    }
+
+    class Manager
+    {
+        public static void DoSomething()
+        {
+            Console.WriteLine("Done!");
+        }
+
+        public void DoSomething2()
+        {
+            Console.WriteLine("Done 2!");
+        }
+    } 
 }
